@@ -26,17 +26,6 @@ module.exports = {
                 test: /index\.exec\.js$/,
                 use: ['script-loader']
             },
-
-            {
-                test: /test\.php$/,
-                loader: 'string-replace-loader',
-                options: {
-                    search: 'jQuery',
-                    replace: 'window.$',
-                    strict: true
-                }
-            }
-
         ],
     },
 };
